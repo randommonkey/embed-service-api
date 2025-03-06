@@ -1,0 +1,144 @@
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+td,
+th {
+  border-bottom: 1px solid rgb(221, 226, 235);
+  text-align: left;
+  padding: 12px;
+  background-color: #fbfdfe;
+  color: #465360;
+  min-width: 150px;
+}
+
+tr:hover td {
+  background-color: #eff2f5;
+}
+
+th {
+  background-color: #eff2f5;
+  color: #293845;
+  font-size: 13px;
+  padding: 18px 12px;
+  border-right: 1px solid rgb(221, 226, 235);
+}
+
+th:first-of-type {
+  border-radius: 5px 0px 0px 5px;
+}
+
+th:last-of-type {
+  border-radius: 0px 5px 5px 0px;
+  border-right: 0px;
+}
+
+.list-body {
+  background-color: #fbfdfe;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.list-container {
+  margin: 20px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px #b4babe7a;
+  border-radius: 5px;
+}
+
+.list-value:nth-child(2) {
+  font-size: 25px;
+  line-height: 0.9;
+}
+
+.list-header {
+  font-size: 13px;
+  font-style: italic;
+  color: #b4babe;
+  margin: 0px 0px 5px 0px;
+}
+
+.list-value {
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+.list-value:last-child {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.gallery-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.gallery-list.list-view {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.gallery-card {
+  /* margin: 20px;
+  padding: 30px; */
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px #b4babe7a;
+  border-radius: 5px;
+}
+
+.gallery-card-download {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.gallery-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.gallery-view-toggle {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.gallery-view-toggle.active {
+  background-color: #cbd5e1;
+  border-radius: 50%;
+}
+
+.gallery-view-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,12 @@
+<div class="gallery-card">
+    <h3 style="margin: 0;">{{table}}</h3>
+    <div style="font-size: small; margin: 4px 0 0;">
+        <p style="margin: 0;">Filas: {{ "{:,}".format(nrow) }}</p>
+        <p style="margin: 0;">Columnas: {{ "{:,}".format(ncol) }}</p>
+    </div>
+    <div style="margin: 8px 0 0; font-size: small;">
+        <span>Descarga:</span>
+        <a href="https://s3.amazonaws.com/uploads.dskt.ch/{{org}}/{{db}}/{{table}}.csv"
+            class="gallery-card-download" download="{{db}}-{{table}}.csv">csv</a>
+    </div>
+</div>
